@@ -73,7 +73,7 @@ chmod 755 "/home/$user"
 mkdir -p "/home/$user/.ssh"
 chmod 700 "/home/$user/.ssh"
 touch "/home/$user/.ssh/authorized_keys"
-chown "$user":$gid "/home/$user"
+chown -R "$user":$gid "/home/$user/.ssh"
 
 # Retrieving user id to use it in chown commands instead of the user name
 # to avoid problems on alpine when the user name contains a '.'
