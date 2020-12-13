@@ -13,7 +13,7 @@ Forked from [atmos/sftp](https://github.com/atmoz/sftp) adapted for my own needs
 - set explicitely folders / files permissions 
 
 # docker-compose : 
-
+```
 version: "2"
 services:
   ssh:
@@ -29,3 +29,4 @@ services:
       - PATH_TO_SFTP_CONFIG/users.conf:/etc/sftp/users.conf:ro
       - PATH_TO_SFTP_CONFIG/ssh_host_ed25519_key:/etc/ssh/ssh_host_ed25519_key:ro
       - PATH_TO_SFTP_CONFIG/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key:ro
+```
