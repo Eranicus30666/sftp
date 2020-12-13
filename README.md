@@ -13,7 +13,7 @@ Forked from [atmos/sftp](https://github.com/atmoz/sftp) adapted for my own needs
 - set explicitely folders / files permissions 
 
 # docker-compose : 
-```
+```yaml
 version: "2"
 services:
   ssh:
